@@ -1,0 +1,58 @@
+/* Code block style */
+code {
+  display: block;
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow-x: auto;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Syntax highlighting */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+}
+
+/* Line numbers style */
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers code {
+  position: relative;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  /* Apply desired background color for line numbers */
+  background-color: #f7f7f7;
+  border-right: 1px solid #ccc;
+  user-select: none;
+}
+
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  /* Adjust line number spacing */
+  padding-right: 0.8em;
+  color: #999;
+  display: block;
+  /* Customize line number font styles if needed */
+}
