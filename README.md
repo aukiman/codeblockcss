@@ -4,13 +4,12 @@ Codeblock CSS for use in web pages
 
 To use this CSS, you can wrap your code blocks in <pre> and <code> tags as follows:
 
-html
-Copy code
 <pre class="line-numbers">
   <code class="language-bash">
     0 22 * * * /sbin/shutdown -r now
   </code>
 </pre>
+
 Make sure to include the Prism.js library for syntax highlighting, as shown in the following example:
 
 html
